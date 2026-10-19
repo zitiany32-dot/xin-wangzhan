@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TIANCONG — Precision Fastener Manufacturer | Since 1989</title>
+<meta name="description" content="Handan Tiancong Fastener Manufacturing Co., Ltd. — ISO 9001:2015 certified factory in Yongnian, China. Hex bolts, nuts & washers M3–M64, 30,000 tonnes/year, exporting to 35+ countries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+}}
+</script>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="pre-inner">
+    <div class="pre-logo">TIANCONG</div>
+    <div class="pre-bar"><span id="preFill"></span></div>
+    <div class="pre-pct" id="prePct">00</div>
+  </div>
+</div>
+
+<!-- NOISE OVERLAY -->
+<div class="noise"></div>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- FIXED 3D CANVAS -->
+<canvas id="gl"></canvas>
+
+<!-- NAV -->
+<header id="nav">
+  <a class="brand" href="#top">TIANCONG<span>®</span></a>
+  <nav class="links">
+    <a href="#process">Process</a>
+    <a href="#capability">Capability</a>
+    <a href="#global">Global</a>
+    <a href="#projects">Projects</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="cta" href="https://wa.me/8615612077902" target="_blank" rel="noopener">Get a Quote</a>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="kicker reveal">EST. 1989 — YONGNIAN · HANDAN · CHINA</p>
+      <h1 class="mega reveal">TIAN<span>CONG</span></h1>
+      <p class="sub reveal">Precision fasteners, forged at scale.<br>From a drawing to a container — one factory, one quality record.</p>
+      <div class="hero-meta reveal">
+        <div><b>ISO 9001:2015</b><span>Certified</span></div>
+        <div><b>30,000 t</b><span>Annual capacity</span></div>
+        <div><b>35+ </b><span>Countries served</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span></span>SCROLL</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee"><div class="marquee-track" id="marqueeTrack">
+    <span>HEX BOLTS</span><i>◆</i><span>HEX NUTS</span><i>◆</i><span>WASHERS</span><i>◆</i>
+    <span>THREAD RODS</span><i>◆</i><span>ANCHORS</span><i>◆</i><span>M3–M64</span><i>◆</i>
+    <span>GRADE 4.8–12.9</span><i>◆</i><span>HDG · DACROMET · ZINC</span><i>◆</i>
+  </div></div>
+
+  <!-- STATS -->
+  <section class="stats" id="stats">
+    <div class="stat reveal"><b><span class="count" data-to="37">0</span></b><span>Years manufacturing<br>since 1989</span></div>
+    <div class="stat reveal"><b><span class="count" data-to="30000">0</span><em>t</em></b><span>Annual capacity<br>tonnes per year</span></div>
+    <div class="stat reveal"><b><span class="count" data-to="35">0</span><em>+</em></b><span>Countries served<br>direct export</span></div>
+    <div class="stat reveal"><b>M3–M64</b><span>Size range<br>cold heading → hot forging</span></div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <p class="kicker reveal">THE WORKS</p>
+    <h2 class="reveal">Everything above this line<br>came off <em>these floors.</em></h2>
+    <p class="body reveal">Steel comes in one end of our Yongnian site and leaves the other in a container. Cold heading, hot forging, thread rolling, heat treatment, plating and inspection — every process under one roof, which is why the lead time is ours to promise and the certificate is ours to sign.</p>
+  </section>
+
+  <!-- PROCESS : horizontal scroll -->
+  <section class="process" id="process">
+    <div class="process-pin">
+      <div class="process-head">
+        <p class="kicker">MANUFACTURING</p>
+        <h2>Six stations.<br><em>Zero subcontracting.</em></h2>
+      </div>
+      <div class="process-track" id="processTrack">
+        <article class="p-card"><span class="p-num">01</span><h3>Raw Material</h3><p class="p-sub">Wire Rod</p><p>SAE 1035–1045 cold-heading-quality wire rod. Certified mill coils; every heat number traceable through the works.</p></article>
+        <article class="p-card"><span class="p-num">02</span><h3>Cold Heading</h3><p class="p-sub">Head Formation</p><p>High-speed multi-station presses form bolt head geometry at room temperature. M3–M36, no material waste.</p></article>
+        <article class="p-card"><span class="p-num">03</span><h3>Thread Rolling</h3><p class="p-sub">CNC Rolling</p><p>Threads rolled between hardened dies — pitch accuracy ±0.01 mm. Stronger than cut threads.</p></article>
+        <article class="p-card"><span class="p-num">04</span><h3>Heat Treatment</h3><p class="p-sub">Quench &amp; Temper</p><p>Continuous mesh-belt furnace. Controlled-atmosphere quench and temper to grades 4.8–12.9.</p></article>
+        <article class="p-card"><span class="p-num">05</span><h3>Surface Coating</h3><p class="p-sub">In-House Lines</p><p>Zinc plating, hot-dip galvanising, Dacromet, black oxide. Salt spray tested to 1000 h in our lab.</p></article>
+        <article class="p-card"><span class="p-num">06</span><h3>Quality Inspection</h3><p class="p-sub">Full Mechanical Test</p><p>Tensile, proof load, hardness, torque. Mill cert per batch; SGS / BV third-party inspection on request.</p></article>
+      </div>
+      <div class="process-progress"><span id="processFill"></span></div>
+    </div>
+  </section>
+
+  <!-- CAPABILITY -->
+  <section class="capability" id="capability">
+    <p class="kicker reveal">CAPABILITY MATRIX</p>
+    <h2 class="reveal">What we can make,<br><em>in one table.</em></h2>
+    <p class="body reveal">The limits are stated. An enquiry we have to decline costs more than one that never arrives.</p>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Process</th><th>Range</th><th>Standard</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>Cold heading</td><td>M3 – M36</td><td>DIN / ISO / ASTM / GB</td><td>Multi-station &amp; nut heading</td></tr>
+          <tr><td>Hot forging</td><td>M36 – M64</td><td>To drawing</td><td>Large diameters, shaped heads</td></tr>
+          <tr><td>Thread rolling</td><td>Coarse · Fine · UNC · UNF</td><td>6g / 6h · ISO 965</td><td>Pitch accuracy ±0.01 mm</td></tr>
+          <tr><td>Heat treatment</td><td>4.8 – 12.9 · A2 / A4</td><td>ISO 898-1</td><td>In-house continuous quench &amp; temper</td></tr>
+          <tr><td>Surface finish</td><td>Zinc · HDG · Dacromet · Black</td><td>ISO 4042 · ASTM B117</td><td>Salt spray 96–1000 h to order</td></tr>
+          <tr><td>Inspection</td><td>Tensile · Torque · Hardness · Salt spray</td><td>ISO 898 · ASTM F606</td><td>Mill cert per lot, SGS / BV on request</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- GLOBAL -->
+  <section class="global" id="global">
+    <p class="kicker reveal">GLOBAL REACH</p>
+    <h2 class="reveal">One works, two ports,<br><em>a lane to most of the world.</em></h2>
+    <p class="body reveal">Everything is made in Handan and trucked 400 km to Tianjin or Qingdao — one factory to audit, one quality record to read. EXW, FOB, CIF and DDP, quoted the way you want to control the chain.</p>
+    <div class="ports reveal">
+      <div class="port"><b>TIANJIN</b><span>≈ 400 km from works</span></div>
+      <div class="port"><b>QINGDAO</b><span>≈ 400 km from works</span></div>
+    </div>
+    <div class="sail reveal">
+      <div class="sail-row"><span>Busan · Kobe</span><div class="bar"><i style="--w:18%"></i></div><b>4–9 d</b></div>
+      <div class="sail-row"><span>Singapore · Port Klang</span><div class="bar"><i style="--w:32%"></i></div><b>12–18 d</b></div>
+      <div class="sail-row"><span>Jebel Ali · Dammam</span><div class="bar"><i style="--w:42%"></i></div><b>18–24 d</b></div>
+      <div class="sail-row"><span>Los Angeles · Long Beach</span><div class="bar"><i style="--w:46%"></i></div><b>18–26 d</b></div>
+      <div class="sail-row"><span>Hamburg · Rotterdam</span><div class="bar"><i style="--w:72%"></i></div><b>30–40 d</b></div>
+      <div class="sail-row"><span>Santos · Buenos Aires</span><div class="bar"><i style="--w:88%"></i></div><b>38–48 d</b></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <p class="kicker reveal">TRACK RECORD</p>
+    <h2 class="reveal">37 years,<br><em>and the projects to show for it.</em></h2>
+    <div class="proj-grid">
+      <article class="proj reveal"><span>Ethiopia</span><h3>HS1058 Bridge Project</h3><p>China Railway 21st Bureau</p></article>
+      <article class="proj reveal"><span>South Africa</span><h3>National Railway Project</h3><p>China Overseas 24th Bureau</p></article>
+      <article class="proj reveal"><span>Vietnam</span><h3>Power Bolt Contract</h3><p>USD 320,000 — Tianyuan Corp</p></article>
+      <article class="proj reveal"><span>Russia</span><h3>High-Speed Railway · Line 4</h3><p>Construction supply</p></article>
+      <article class="proj reveal"><span>Malaysia</span><h3>Overseas Projects #7–#23</h3><p>China Hengda</p></article>
+      <article class="proj reveal"><span>Singapore</span><h3>Building Project #9–#21</h3><p>Country Garden</p></article>
+      <article class="proj reveal"><span>China · 2023</span><h3>Xi'an Metro Line 15</h3><p>Tunnel segment bolts</p></article>
+      <article class="proj reveal"><span>China · 2024–26</span><h3>Shenyang Metro Line 6</h3><p>Shield segment bolts</p></article>
+    </div>
+  </section>
+
+  <!-- QUOTE STEPS -->
+  <section class="steps">
+    <p class="kicker reveal">HOW TO ORDER</p>
+    <h2 class="reveal">Drawing to container<br><em>in three steps.</em></h2>
+    <div class="step-grid">
+      <article class="reveal"><span>01 · 2 min</span><h3>Send the specification</h3><p>A standard number (DIN 933 M12×60, 8.8, HDG) is enough. A drawing, a photo, or a sample works just as well.</p></article>
+      <article class="reveal"><span>02 · 24 h</span><h3>Price &amp; samples back</h3><p>Unit price FOB or CIF, lead time, packing spec. Samples are free — you pay only the courier.</p></article>
+      <article class="reveal"><span>03 · 15–35 d</span><h3>Production &amp; shipment</h3><p>Mill certificate per heat number. SGS / BV inspection before the container is sealed.</p></article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <p class="kicker reveal">BEFORE YOU ENQUIRE</p>
+    <h2 class="reveal">What buyers<br><em>ask us first.</em></h2>
+    <div class="faq-list">
+      <details class="reveal"><summary>What is your minimum order quantity?</summary><p>Stock DIN/ISO items: one carton. Made-to-order: typically 500 kg for common sizes, one tonne for larger diameters or non-standard parts needing tooling.</p></details>
+      <details class="reveal"><summary>How long is the lead time?</summary><p>Stock items ship in 7–10 days. Production runs 15–35 days depending on quantity and finish. HDG and Dacromet add roughly 5 days.</p></details>
+      <details class="reveal"><summary>Can I get samples before ordering?</summary><p>Yes — standard samples are free, you pay only the courier. Non-standard samples are made from your drawing; the cost comes off your first invoice if the order follows.</p></details>
+      <details class="reveal"><summary>What are your payment terms?</summary><p>30% T/T deposit, balance against copy B/L for first orders. Irrevocable L/C at sight accepted. Established customers move to open account.</p></details>
+      <details class="reveal"><summary>Mill certificates and third-party inspection?</summary><p>Every shipment carries a mill certificate traceable to the heat number. We welcome SGS, BV, TÜV or your own inspector — arranged before the container is sealed.</p></details>
+      <details class="reveal"><summary>Can you make non-standard parts?</summary><p>Yes — non-standard is normal work here, not an exception. Send a drawing (PDF, DWG, DXF, STEP) or a sample.</p></details>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="reveal">Send a spec.<br><em>Get a number.</em></h2>
+    <p class="reveal">No account, no minimum enquiry, no sales call before you get a price.</p>
+    <div class="cta-row reveal">
+      <a class="btn-fire" href="https://wa.me/8615612077902" target="_blank" rel="noopener">WhatsApp +86 156 1207 7902</a>
+      <a class="btn-ghost" href="mailto:jieke@tian-cong.com">jieke@tian-cong.com</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="f-brand">TIANCONG<span>®</span></div>
+    <p>Handan City Tiancong Fastener Manufacturing Co., Ltd.<br>Yongnian District, Handan City, Hebei Province, China</p>
+    <p class="f-small">ISO 9001:2015 · 30,000 t/yr · 35+ countries · Since 1989</p>
+  </footer>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
